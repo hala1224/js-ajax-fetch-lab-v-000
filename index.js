@@ -2,7 +2,7 @@ function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
   
-  const token = 'YOUR_TOKEN_HERE';
+  const token = ' 53d3206d9ceefa1c8e3b50178179519485e9a3f1';
  
 fetch('https://api.github.com/user/repos', {
   headers: {
