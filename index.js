@@ -1,11 +1,5 @@
-function getToken() {
-  //change to your token to run in browser, but set
-  //back to '' before committing so all tests pass
-  
-  const token = ' 53d3206d9ceefa1c8e3b50178179519485e9a3f1';
- 
-  return '';
-}
+
+const token = getToken();
 
 function forkRepo() {
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
@@ -37,7 +31,7 @@ function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
   
-  const token = ' 53d3206d9ceefa1c8e3b50178179519485e9a3f1';
+  return ' 53d3206d9ceefa1c8e3b50178179519485e9a3f1';
  
-  return '';
+  // return '';
 }
