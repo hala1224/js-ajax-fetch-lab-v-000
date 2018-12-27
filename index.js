@@ -34,6 +34,13 @@ function createIssue() {
 
 function getIssues() {
   //once an issue is submitted, fetch all open issues to see the issues you are creating
+  const fork = `hala1224/javascript-fetch-lab`;
+    fetch(`https://api.github.com/repos/${fork}/issues`, {
+      method: 'get',
+      headers: {
+        Authorization: `token ${token}`
+      }
+    }).then(resp => resp.json()).then(data => showIssues(data));
 }
 
 
