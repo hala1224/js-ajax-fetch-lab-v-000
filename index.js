@@ -4,7 +4,7 @@ const token = getToken();
 function forkRepo() {
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
   //use fetch to fork it!
-  fetch(`https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/forks`, {
+  fetch(`https://api.github.com/repos/learn-co-curriculum/js-ajax-fetch-lab/forks`, {
     method: 'post',
     headers: {
       Authorization: `token ${token}`
@@ -23,7 +23,7 @@ function createIssue() {
   var title = document.getElementById("title").value
   var body = document.getElementById("body").value
   var issue = {title: title, body: body}
-  fetch(`https://api.github.com/repos/hala1224/javascript-fetch-lab/issues`, {
+  fetch(`https://api.github.com/repos/hala1224/js-ajax-fetch-lab/issues`, {
     method: 'post',
     headers: {
       'Authorization': `token ${token}`
