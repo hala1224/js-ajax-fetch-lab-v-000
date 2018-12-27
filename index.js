@@ -28,6 +28,7 @@ function forkRepo() {
 
 function showResults(json) {
   //use this function to display the results from forking via the API
+  $('#results').append(`<h3>Fork:</h3><a href="${json.html_url}"> ${json.html_url}</a> - ${json.name}`);
 }
 
 function createIssue() {
