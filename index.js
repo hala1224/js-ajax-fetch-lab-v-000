@@ -20,6 +20,16 @@ function showResults(json) {
 
 function createIssue() {
   //use this function to create an issue based on the values input in index.html
+  var title = document.getElementById("title").value
+  var body = document.getElementById("body").value
+  var issue = {title: title, body: body}
+  fetch(`https://api.github.com/repos/hala1224/javascript-fetch-lab/issues`, {
+    method: 'post',
+    headers: {
+      'Authorization': `token ${token}`
+    },
+    body: JSON.stringify(issue)
+  }).then(resp => getIssues());
 }
 
 function getIssues() {
